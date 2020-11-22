@@ -3,4 +3,7 @@
 
 This is an example of the conversations:
 
-![Image](./toWords.png)
+![Image](./toWords.jpg)
+![Image](./toWords2.jpg)
+![Image](./toWords3.jpg)
+![Image](./toWords4.jpg)
