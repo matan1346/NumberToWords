@@ -193,7 +193,7 @@ class NumberToWords
         //$number = strval($this->Number);
         //$numberReverse = strrev($number);
         
-        $length = mb_strlen($this->Number);
+        $length = strlen($this->Number);
         $arrNumbers = str_split($this->Number);
         
         if($length <= 3)
@@ -320,7 +320,7 @@ class NumberToWords
         }
         
         if($flagComa)
-            $String = mb_substr($String, 0, mb_strlen($String) - 2);
+            $String = mb_substr($String, 0, strlen($String) - 2);
         
         if($this->IsNegative)
             $String = $this->minus_word.$String;
