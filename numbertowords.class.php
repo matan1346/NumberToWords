@@ -320,7 +320,7 @@ class NumberToWords
         }
         
         if($flagComa)
-            $String = mb_substr($String, 0, strlen($String) - 2);
+            $String = substr($String, 0, strlen($String) - 2);
         
         if($this->IsNegative)
             $String = $this->minus_word.$String;
