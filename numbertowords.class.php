@@ -17,6 +17,20 @@
  * @license  PHP 3.01 http://www.php.net/license/3_01.txt
 */
 
+
+if (!function_exists(bcmul)) {
+  function bcmul($_ro, $_lo, $_scale=0) {
+    return round($_ro*$_lo, $_scale);
+  }
+}
+  
+if (!function_exists(bcdiv)) {
+  function bcdiv($_ro, $_lo, $_scale=0) {
+    return round($_ro/$_lo, $_scale);
+  }
+}
+
+
 class NumberToWords
 {
     private $Number;
